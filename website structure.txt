@@ -1,0 +1,189 @@
+<section id="machines" class="py-16">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-2xl font-bold text-center">Machine Manufacturers & Capabilities</h2>
+        <p class="mt-3 text-center text-gray-600">We work with modern fabrication equipment and trusted machine manufacturers to deliver consistent quality.</p>
+
+        <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="bg-white p-6 rounded-lg shadow">
+            <h4 class="font-semibold">Sheet Metal Presses</h4>
+            <p class="mt-2 text-sm text-gray-500">Partner brands: (example) — AMADA, Trumpf, local OEMs.</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow">
+            <h4 class="font-semibold">Welding & Fabrication</h4>
+            <p class="mt-2 text-sm text-gray-500">Robotic & manual setups to meet volume and precision needs.</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow">
+            <h4 class="font-semibold">Surface Finishing</h4>
+            <p class="mt-2 text-sm text-gray-500">Powder coating, electroplating and passivation lines.</p>
+          </div>
+        </div>
+
+        <div class="mt-8">
+          <h5 class="font-semibold">Custom machine list / OEMs</h5>
+          <ul class="list-disc list-inside mt-2 text-sm text-gray-600">
+            <li>Hydraulic press: 300-ton capacity</li>
+            <li>Automatic powder coat line — 12m</li>
+            <li>Laser cutting & CNC bending cells</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+
+<section class="max-w-7xl mx-auto p-6">
+  <h2 class="text-3xl font-bold text-center mb-10 text-gray-800">Types of Machines</h2>
+
+  <div class="space-y-6">
+
+    <!-- 1. Construction Machines -->
+    <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
+      <button class="w-full text-left flex justify-between items-center text-xl font-semibold text-indigo-700" onclick="toggleList('construction')">
+        🏗️ Construction Machines
+        <span id="arrow-construction" class="transition-transform">▼</span>
+      </button>
+      <ul id="construction" class="hidden mt-4 text-gray-700 list-disc list-inside space-y-1">
+        <li>Concrete Mixers</li>
+        <li>Excavators</li>
+        <li>Backhoe Loaders</li>
+        <li>Bulldozers</li>
+        <li>Cranes (Tower, Mobile, Crawler)</li>
+        <li>Road Rollers</li>
+        <li>Pavers</li>
+        <li>Dump Trucks</li>
+        <li>Concrete Vibrators</li>
+        <li>Mini Excavators</li>
+      </ul>
+    </div>
+
+    <!-- 2. Bending Machines -->
+    <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
+      <button class="w-full text-left flex justify-between items-center text-xl font-semibold text-indigo-700" onclick="toggleList('bending')">
+        🔩 Bending Machines
+        <span id="arrow-bending" class="transition-transform">▼</span>
+      </button>
+      <ul id="bending" class="hidden mt-4 text-gray-700 list-disc list-inside space-y-1">
+        <li>Hydraulic Press Brake Machine</li>
+        <li>CNC Bending Machine</li>
+        <li>Pipe Bending Machine</li>
+        <li>Sheet Metal Bending Machine</li>
+        <li>Plate Bending Machine</li>
+        <li>Roll Bending Machine</li>
+        <li>Angle Bending Machine</li>
+        <li>Busbar Bending Machine</li>
+        <li>Manual Bending Machine</li>
+        <li>Servo Electric Bending Machine</li>
+      </ul>
+    </div>
+
+    <!-- 3. Cutting Machines -->
+    <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
+      <button class="w-full text-left flex justify-between items-center text-xl font-semibold text-indigo-700" onclick="toggleList('cutting')">
+        ✂️ Cutting Machines
+        <span id="arrow-cutting" class="transition-transform">▼</span>
+      </button>
+      <ul id="cutting" class="hidden mt-4 text-gray-700 list-disc list-inside space-y-1">
+        <li>Hydraulic Cutting Machine</li>
+        <li>Plasma Cutting Machine</li>
+        <li>Laser Cutting Machine</li>
+        <li>Water Jet Cutting Machine</li>
+        <li>Metal Sheet Cutting Machine</li>
+        <li>Pipe Cutting Machine</li>
+        <li>CNC Profile Cutting Machine</li>
+        <li>Guillotine Cutting Machine</li>
+        <li>Cold Saw Machine</li>
+        <li>Band Saw Cutting Machine</li>
+      </ul>
+    </div>
+
+    <!-- 4. Shearing Machines -->
+    <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
+      <button class="w-full text-left flex justify-between items-center text-xl font-semibold text-indigo-700" onclick="toggleList('shearing')">
+        ⚙️ Shearing Machines
+        <span id="arrow-shearing" class="transition-transform">▼</span>
+      </button>
+      <ul id="shearing" class="hidden mt-4 text-gray-700 list-disc list-inside space-y-1">
+        <li>Hydraulic Shearing Machine</li>
+        <li>Mechanical Shearing Machine</li>
+        <li>CNC Shearing Machine</li>
+        <li>Guillotine Shearing Machine</li>
+        <li>Swing Beam Shearing Machine</li>
+        <li>Pneumatic Shearing Machine</li>
+        <li>Plate Shearing Machine</li>
+        <li>Power Shearing Machine</li>
+        <li>Sheet Shearing Machine</li>
+        <li>Foot-Operated Shearing Machine</li>
+      </ul>
+    </div>
+
+    <!-- 5. Polishing Machines -->
+    <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
+      <button class="w-full text-left flex justify-between items-center text-xl font-semibold text-indigo-700" onclick="toggleList('polishing')">
+        ✨ Polishing Machines
+        <span id="arrow-polishing" class="transition-transform">▼</span>
+      </button>
+      <ul id="polishing" class="hidden mt-4 text-gray-700 list-disc list-inside space-y-1">
+        <li>Metal Polishing Machine</li>
+        <li>Bench Polisher</li>
+        <li>Floor Polishing Machine</li>
+        <li>Pipe Polishing Machine</li>
+        <li>Belt Polishing Machine</li>
+        <li>Buffing Machine</li>
+        <li>Surface Finishing Machine</li>
+        <li>Edge Polishing Machine</li>
+        <li>Mirror Finishing Machine</li>
+        <li>CNC Polishing Machine</li>
+      </ul>
+    </div>
+
+    <!-- 6. Iron Workers -->
+    <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
+      <button class="w-full text-left flex justify-between items-center text-xl font-semibold text-indigo-700" onclick="toggleList('ironworkers')">
+        🛠️ Iron Workers
+        <span id="arrow-ironworkers" class="transition-transform">▼</span>
+      </button>
+      <ul id="ironworkers" class="hidden mt-4 text-gray-700 list-disc list-inside space-y-1">
+        <li>Hydraulic Iron Worker</li>
+        <li>Mechanical Iron Worker</li>
+        <li>CNC Iron Worker</li>
+        <li>Universal Iron Worker</li>
+        <li>Dual Cylinder Iron Worker</li>
+        <li>Single Cylinder Iron Worker</li>
+        <li>Punching Iron Worker</li>
+        <li>Shearing and Notching Iron Worker</li>
+        <li>Compact Iron Worker</li>
+        <li>Heavy-Duty Industrial Iron Worker</li>
+      </ul>
+    </div>
+
+    <!-- 7. Specialized Machines -->
+    <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
+      <button class="w-full text-left flex justify-between items-center text-xl font-semibold text-indigo-700" onclick="toggleList('specialized')">
+        ⚡ Specialized Machines
+        <span id="arrow-specialized" class="transition-transform">▼</span>
+      </button>
+      <ul id="specialized" class="hidden mt-4 text-gray-700 list-disc list-inside space-y-1">
+        <li>Hydraulic Press Machine</li>
+        <li>Notching Machine</li>
+        <li>Riveting Machine</li>
+        <li>Deburring Machine</li>
+        <li>Rolling Machine</li>
+        <li>Slotting Machine</li>
+        <li>Drilling and Tapping Machine</li>
+        <li>Hydraulic Power Pack Unit</li>
+        <li>Punch Press Machine</li>
+        <li>Tube End Forming Machine</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<script>
+  // JavaScript to toggle each list
+  function toggleList(id) {
+    const list = document.getElementById(id);
+    const arrow = document.getElementById(`arrow-${id}`);
+    list.classList.toggle('hidden');
+    arrow.classList.toggle('rotate-180');
+  }
+</script>

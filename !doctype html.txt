@@ -1,0 +1,508 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>P2J Industries — Home & Kitchen Utilities, Wall Décor & Storage Solutions</title>
+  <meta name="description" content="P2J Industries designs and manufactures premium home & kitchen utilities, wall décor and storage solutions that bring beauty and function to every home." />
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    /* small extra touches */
+    .hero-bg{background: linear-gradient(120deg, rgba(255,255,255,0.03), rgba(0,0,0,0.03)), url('https://images.unsplash.com/photo-1524758631624-e2822e304c36?q=80&w=1600&auto=format&fit=crop&ixlib=rb-4.0.3&s=00'); background-size: cover; background-position: center;}
+   /* Ensure anchored sections are not hidden under the sticky header.
+     Increased to account for taller headers and visual card overlays. */
+   section { scroll-margin-top: 8rem; }
+   /* Slight extra top spacing for About to separate it from the hero and avoid overlap */
+   #about { padding-top: 6rem; }
+   /* Add extra bottom padding to hero so the featured product card doesn't overlap following sections */
+   .hero-bg { padding-bottom: 4.5rem; }
+  </style>
+</head>
+<body class="antialiased text-gray-800 bg-gray-50">
+  <!-- NAV -->
+ <header class="bg-white shadow-sm sticky top-0 z-40">
+  <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
+    <div class="flex justify-between items-center h-30"><!-- increased header height -->
+      
+      <!-- Logo and Title -->
+      <a href="#home" class="flex items-center">
+        <img src="Images\logo\P2J_Logo.jpg" 
+             alt="P2J Industries Logo" 
+             class="w-20 h-23 object-contain" /> <!-- increased logo size -->
+
+      </a>
+
+      
+      <nav class="hidden md:flex items-center space-x-6 text-sm">
+          <a href="#home" class="hover:text-indigo-600">Home</a>
+          <a href="#about" class="hover:text-indigo-600">About</a>
+          <a href="#why" class="hover:text-indigo-600">Why Choose Us</a>
+         <a href="#products" class="hover:text-indigo-600">Products</a>
+          <a href="#machines" class="hover:text-indigo-600">Machine Manufacturers</a>
+          <a href="#videos" class="hover:text-indigo-600">Video Testimonials</a>
+          <a href="#careers" class="hover:text-indigo-600">Careers</a>
+          <a href="#contact" class="hover:text-indigo-600">Contact Us</a>
+        </nav>
+
+        <div class="flex items-center space-x-2">
+          <a href="#contact" class="hidden sm:inline-block px-4 py-2 bg-indigo-600 text-white rounded-md text-sm hover:bg-indigo-700 transition">Get in touch</a>
+          <button id="mobileBtn" class="md:hidden p-2 rounded-md focus:outline-none">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- mobile menu -->
+    <div id="mobileMenu" class="md:hidden hidden border-t">
+      <div class="px-4 py-4 flex flex-col space-y-2">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#why">Why Choose Us</a>
+        <a href="#products">Products</a>
+        <a href="#machines">Machine Manufacturers</a>
+        <a href="#videos">Video Testimonials</a>
+        <a href="#careers">Careers</a>
+        <a href="#contact">Contact Us</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main id="home">
+    <section class="hero-bg py-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          <div class="text-white">
+            <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight text-gray-900">Designing & Manufacturing Quality Home & Kitchen Products</h1>
+            <p class="mt-4 text-lg text-white max-w-xl"><strong>P2J Industries creates premium home and kitchen utilities, wall décor and storage solutions that bring beauty and function to modern homes.</strong></p>
+            <div class="mt-6 flex items-center space-x-4">
+              <a href="#contact" class="px-6 py-3 bg-indigo-600 text-white rounded-md shadow">Request a Quote</a>
+              <a href="#machines" class="px-6 py-3 border border-gray-200 rounded-md"><strong>Explore Machines</strong></a>
+            </div>
+          </div>
+
+          <div>
+            <div class="bg-white rounded-lg shadow p-6">
+              <h3 class="font-semibold text-lg">Featured product</h3>
+              <img src="https://images.unsplash.com/photo-1540574163026-643ea20ade25?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=00" alt="kitchen product" class="mt-4 rounded-md w-full object-cover h-63">
+              <p class="mt-3 text-sm text-gray-600">Premium stainless storage rack — modular, corrosion resistant, made for modern kitchens.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="py-16">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-center mb-8">🏭 About Us – P2J Industries</h2>
+        
+        <div class="prose max-w-none">
+          <p class="mt-4 text-gray-600">P2J Industries stands for "Pen to Jet" — a symbol of innovation, precision, and reliability in manufacturing.</p>
+          
+          <p class="mt-4 text-gray-600">Founded with a vision to transform industrial production through technology and quality craftsmanship, we have grown into a trusted name delivering high-performance products across multiple sectors.</p>
+          
+          <p class="mt-4 text-gray-600">At P2J Industries, we believe that every product tells a story of dedication, engineering excellence, and customer trust. Our advanced manufacturing processes, skilled workforce, and continuous R&D enable us to meet the evolving demands of the modern industry.</p>
+          
+          <p class="mt-4 text-gray-600">We are committed to providing end-to-end manufacturing solutions — from concept design and prototyping to production and delivery — ensuring that every detail aligns with international quality standards.</p>
+
+          <div class="mt-12">
+            <h3 class="text-2xl font-bold">🎯 Our Mission</h3>
+            <ul class="mt-4 space-y-4 text-gray-600 list-none">
+              <li>• To deliver premium-quality products with precision and consistency.</li>
+              <li>• To integrate technology and innovation into every stage of production.</li>
+              <li>• To build long-term relationships through reliability, transparency, and excellence.</li>
+              <li>• To contribute to a sustainable future by adopting eco-friendly manufacturing processes.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY CHOOSE US -->
+    <section id="why" class="py-16 bg-gray-100">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-2xl font-bold text-center">Why Choose Us</h2>
+        <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="bg-white p-6 rounded-lg shadow">
+            <h3 class="font-semibold">End-to-End Manufacturing</h3>
+            <p class="mt-2 text-sm text-gray-600">From CAD and tooling to production and logistics — under one roof.</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow">
+            <h3 class="font-semibold">Custom Solutions</h3>
+            <p class="mt-2 text-sm text-gray-600">Custom sizes, finishes, and packaging to match your brand needs.</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow">
+            <h3 class="font-semibold">Strict Quality Checks</h3>
+            <p class="mt-2 text-sm text-gray-600">Batch sampling, material certificates and functional testing.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- PRODUCTS -->
+    <section id="products" class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-2xl font-bold">Our Products</h2>
+        <p class="mt-3 text-gray-600">Explore our comprehensive range of premium products across multiple categories.</p>
+        
+  <div class="mt-12 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          <!-- 1. Machines -->
+<div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+  <div class="h-40 bg-gray-100 rounded-lg mb-4 overflow-hidden">
+    <img src="Images\Products\industrial-machine.jpg" alt="Industrial Machines" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+  </div>
+  <h3 class="text-lg font-bold mb-2">Machines</h3>
+  <p class="text-gray-600 mb-4 text-sm">
+    Industrial-grade machinery designed for manufacturing excellence.<br>
+  </p>
+  <a href="#contact" class="inline-block bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-700 transition text-sm">Learn More</a>
+</div>
+
+
+          <!-- 2. Gadgets -->
+          <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+            <div class="h-40 bg-gray-100 rounded-lg mb-4 overflow-hidden">
+              <img src="Images/Products/smart gadgets.jpeg" alt="Smart Gadgets" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+            </div>
+            <h3 class="text-lg font-bold mb-2">Gadgets</h3>
+            <p class="text-gray-600 mb-4 text-sm">Smart devices for modern living.</p>
+            <a href="#contact" class="inline-block bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-700 transition text-sm">Learn More</a>
+          </div>
+
+          <!-- 3. Kitchen Baskets-->
+          <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+            <div class="h-40 bg-gray-100 rounded-lg mb-4 overflow-hidden">
+              <img src="Images/Products/Kitchen Baskets.jpg" alt="Modern Kitchen Solutions" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+            </div>
+            <h3 class="text-lg font-bold mb-2">Kitchen Baskets</h3>
+            <p class="text-gray-600 mb-4 text-sm">Premium kitchen solutions.</p>
+            <a href="#contact" class="inline-block bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-700 transition text-sm">Learn More</a>
+          </div>
+
+          <!-- 4. Kitchen Utilities -->
+          <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+            <div class="h-40 bg-gray-100 rounded-lg mb-4 overflow-hidden">
+              <img src="Images/Products/kitchen utilities.jpg" alt="Kitchen Utilities" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+            </div>
+            <h3 class="text-lg font-bold mb-2">Kitchen Utilities</h3>
+            <p class="text-gray-600 mb-4 text-sm">Essential kitchen tools and accessories.</p>
+            <a href="#contact" class="inline-block bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-700 transition text-sm">Learn More</a>
+          </div>
+
+          <!-- 5. Gym Equipment -->
+          <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+            <div class="h-40 bg-gray-100 rounded-lg mb-4 overflow-hidden">
+              <img src="Images/Products/Gym Equipments.jpg" alt="Professional Gym Equipment" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+            </div>
+            <h3 class="text-lg font-bold mb-2">Gym Equipment</h3>
+            <p class="text-gray-600 mb-4 text-sm">Professional fitness and training gear.</p>
+            <a href="#contact" class="inline-block bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-700 transition text-sm">Learn More</a>
+          </div>
+
+          <!-- 6. Tools -->
+          <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+            <div class="h-40 bg-gray-100 rounded-lg mb-4 overflow-hidden">
+              <img src="Images\Products\tool.jpg" alt="Professional Tools" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+            </div>
+            <h3 class="text-lg font-bold mb-2">Tools</h3>
+            <p class="text-gray-600 mb-4 text-sm">Professional-grade tools for every job.</p>
+            <a href="#contact" class="inline-block bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-700 transition text-sm">Learn More</a>
+          </div>
+
+          <!-- 7. Wire Trays -->
+          <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+            <div class="h-40 bg-gray-100 rounded-lg mb-4 overflow-hidden">
+              <img src="Images/products/wire-trays.jpg" alt="Wire Trays and Management" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+            </div>
+            <h3 class="text-lg font-bold mb-2">Wire Trays</h3>
+            <p class="text-gray-600 mb-4 text-sm">Organizational solutions for cable management.</p>
+            <a href="#contact" class="inline-block bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-700 transition text-sm">Learn More</a>
+          </div>
+
+          <!-- 8. Child Utilities -->
+          <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+            <div class="h-40 bg-gray-100 rounded-lg mb-4 overflow-hidden">
+              <img src="Images/Products/child utilities.jpg" alt="Child Safety and Utilities" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+            </div>
+            <h3 class="text-lg font-bold mb-2">Child Utilities</h3>
+            <p class="text-gray-600 mb-4 text-sm">Safe and practical solutions for children.</p>
+            <a href="#contact" class="inline-block bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-700 transition text-sm">Learn More</a>
+          </div>
+
+          <!-- 9. Wall Decors -->
+          <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+            <div class="h-40 bg-gray-100 rounded-lg mb-4 overflow-hidden">
+              <img src="Images/Products/wall decors.jpg" alt="Wall Decorations" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+            </div>
+            <h3 class="text-lg font-bold mb-2">Wall Decors</h3>
+            <p class="text-gray-600 mb-4 text-sm">Elegant wall decorations and accessories.</p>
+            <a href="#contact" class="inline-block bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-700 transition text-sm">Learn More</a>
+          </div>
+
+          <!-- 10. Common Utilities -->
+          <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+            <div class="h-40 bg-gray-100 rounded-lg mb-4 overflow-hidden">
+              <img src="Images/Products/Common-utilities.jpg" alt="Common Home Utilities" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+            </div>
+            <h3 class="text-lg font-bold mb-2">Common Utilities</h3>
+            <p class="text-gray-600 mb-4 text-sm">Everyday essentials for home and office.</p>
+            <a href="#contact" class="inline-block bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-700 transition text-sm">Learn More</a>
+          </div>
+
+          <!-- 11. Electronic Gadgets -->
+          <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+            <div class="h-40 bg-gray-100 rounded-lg mb-4 overflow-hidden">
+              <img src="Images\Products\Electronics-gadgets.jpg" alt="Electronic Gadgets" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+            </div>
+            <h3 class="text-lg font-bold mb-2">Electronic Gadgets</h3>
+            <p class="text-gray-600 mb-4 text-sm">Modern electronic solutions and devices.</p>
+            <a href="#contact" class="inline-block bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-700 transition text-sm">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MACHINE MANUFACTURERS -->
+<section id="machines" class="py-16 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <h2 class="text-2xl font-bold">Machine Manufacturers & Capabilities</h2>
+    <p class="mt-3 text-gray-600">
+      We work with modern fabrication equipment and trusted machine manufacturers 
+      to deliver consistent quality and precision across industries.
+    </p>
+
+    <div class="mt-12 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
+
+      <!-- 1. Construction Machines -->
+      <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+        <div class="h-40 bg-gray-100 rounded-lg mb-4 overflow-hidden">
+          <img src="Images/Machines/construction-machines.jpg" 
+               alt="Construction Machines" 
+               class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+        </div>
+        <h3 class="text-lg font-bold mb-2">Construction Machines</h3>
+        <p class="text-gray-600 mb-4 text-sm">
+          Durable and efficient machinery for heavy-duty construction and fabrication.
+        </p>
+        <a href="#contact" 
+           class="inline-block bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-700 transition text-sm">
+           Learn More
+        </a>
+      </div>
+
+      <!-- 2. Bending Machines -->
+      <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+        <div class="h-40 bg-gray-100 rounded-lg mb-4 overflow-hidden">
+          <img src="Images/Machines/bending-machines.jpg" 
+               alt="Bending Machines" 
+               class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+        </div>
+        <h3 class="text-lg font-bold mb-2">Bending Machines</h3>
+        <p class="text-gray-600 mb-4 text-sm">
+          High-precision bending machines for sheet metal and structural work.
+        </p>
+        <a href="#contact" 
+           class="inline-block bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-700 transition text-sm">
+           Learn More
+        </a>
+      </div>
+
+      <!-- 3. Cutting Machines -->
+      <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+        <div class="h-40 bg-gray-100 rounded-lg mb-4 overflow-hidden">
+          <img src="Images/Machines/cutting-machine.jpg" 
+               alt="Cutting Machines" 
+               class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+        </div>
+        <h3 class="text-lg font-bold mb-2">Cutting Machines</h3>
+        <p class="text-gray-600 mb-4 text-sm">
+          Laser, plasma, and CNC cutting solutions for precision manufacturing.
+        </p>
+        <a href="#contact" 
+           class="inline-block bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-700 transition text-sm">
+           Learn More
+        </a>
+      </div>
+
+      <!-- 4. Shearing Machines -->
+      <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+        <div class="h-40 bg-gray-100 rounded-lg mb-4 overflow-hidden">
+          <img src="Images/machines/shearing-machines.jpg" 
+               alt="Shearing Machines" 
+               class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+        </div>
+        <h3 class="text-lg font-bold mb-2">Shearing Machines</h3>
+        <p class="text-gray-600 mb-4 text-sm">
+          Reliable and powerful machines for sheet metal shearing and cutting tasks.
+        </p>
+        <a href="#contact" 
+           class="inline-block bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-700 transition text-sm">
+           Learn More
+        </a>
+      </div>
+
+      <!-- 5. Polishing Machines -->
+      <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+        <div class="h-40 bg-gray-100 rounded-lg mb-4 overflow-hidden">
+          <img src="Images\machines\Polishing machine.jpg" 
+               alt="Polishing Machines" 
+               class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+        </div>
+        <h3 class="text-lg font-bold mb-2">Polishing Machines</h3>
+        <p class="text-gray-600 mb-4 text-sm">
+          High-performance polishing systems for smooth and refined finishes.
+        </p>
+        <a href="#contact" 
+           class="inline-block bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-700 transition text-sm">
+           Learn More
+        </a>
+      </div>
+
+      <!-- 6. Iron Workers -->
+      <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+        <div class="h-40 bg-gray-100 rounded-lg mb-4 overflow-hidden">
+          <img src="Images/Machines/iron-workers.jpg" 
+               alt="Iron Worker Machines" 
+               class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+        </div>
+        <h3 class="text-lg font-bold mb-2">Iron Workers</h3>
+        <p class="text-gray-600 mb-4 text-sm">
+          Multi-functional ironworker machines for punching, shearing, and notching.
+        </p>
+        <a href="#contact" 
+           class="inline-block bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-700 transition text-sm">
+           Learn More
+        </a>
+      </div>
+
+      <!-- 7. Specialized Machines -->
+      <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+        <div class="h-40 bg-gray-100 rounded-lg mb-4 overflow-hidden">
+          <img src="Images\machines\specialized machines.jpeg" 
+               alt="Specialized Machines" 
+               class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+        </div>
+        <h3 class="text-lg font-bold mb-2">Specialized Machines</h3>
+        <p class="text-gray-600 mb-4 text-sm">
+          Custom-built machines tailored for unique industrial applications.
+        </p>
+        <a href="#contact" 
+           class="inline-block bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-700 transition text-sm">
+           Learn More
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- VIDEO TESTIMONIALS -->
+    <section id="videos" class="py-16 bg-gray-50">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-2xl font-bold">Video Testimonials</h2>
+        <p class="mt-3 text-gray-600">Hear from our clients and partners.</p>
+
+        <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- Replace src with real youtube URLs -->
+          <div class="bg-white p-4 rounded-lg shadow">
+            <div class="aspect-w-16 aspect-h-9">
+              <iframe class="w-full h-48" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="testimonial1" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <p class="mt-3 text-sm text-gray-600">Client — Modular kitchen installation.</p>
+          </div>
+
+          <div class="bg-white p-4 rounded-lg shadow">
+            <div class="aspect-w-16 aspect-h-9">
+              <iframe class="w-full h-48" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="testimonial2" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <p class="mt-3 text-sm text-gray-600">Retail partner — Retail display and fixtures.</p>
+          </div>
+
+          <div class="bg-white p-4 rounded-lg shadow">
+            <div class="aspect-w-16 aspect-h-9">
+              <iframe class="w-full h-48" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="testimonial3" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <p class="mt-3 text-sm text-gray-600">Architect — Product integration in projects.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CAREERS -->
+    <section id="careers" class="py-16">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-2xl font-bold text-center">Careers</h2>
+        <p class="mt-3 text-center text-gray-600">Join a growing team of designers, engineers and manufacturing professionals.</p>
+
+        <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="bg-white p-6 rounded-lg shadow">
+            <h4 class="font-semibold">Production Engineer</h4>
+            <p class="mt-2 text-sm text-gray-600">Requirements: Degree in Mechanical / Production engineering, 2+ years in fabrication.</p>
+            <a href="#contact" class="inline-block mt-4 text-sm text-indigo-600">Apply now</a>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow">
+            <h4 class="font-semibold">Product Designer</h4>
+            <p class="mt-2 text-sm text-gray-600">Requirements: Industrial design background, CAD proficiency, prototyping experience.</p>
+            <a href="#contact" class="inline-block mt-4 text-sm text-indigo-600">Apply now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="py-16 bg-indigo-600 text-white">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div>
+            <h2 class="text-2xl font-bold">Contact Us</h2>
+            <p class="mt-2 text-gray-100 text-sm">For enquiries, orders or partnerships, drop us a message and our team will get back to you.</p>
+
+            <ul class="mt-4 text-sm text-gray-100 space-y-2">
+              <li><strong>Address:</strong> No.834, GST Road, Keezh Edayalam Post, Tindivanam Taluk, Villupuram District India</li>
+              <li><strong>Phone:</strong> +91 98077 18888</li>
+              <li><strong>Email:</strong> p2jindustries@gmail.com</li>
+            </ul>
+          </div>
+
+          <div>
+            <form class="bg-white text-gray-800 p-6 rounded-lg shadow">
+              <label class="block text-sm">Name</label>
+              <input class="w-full mt-1 p-2 border rounded" placeholder="Your name" />
+
+              <label class="block text-sm mt-3">Email</label>
+              <input class="w-full mt-1 p-2 border rounded" placeholder="you@example.com" />
+
+              <label class="block text-sm mt-3">Message</label>
+              <textarea class="w-full mt-1 p-2 border rounded" rows="4" placeholder="Tell us about your project..."></textarea>
+
+              <button type="button" class="mt-4 w-full px-4 py-2 bg-indigo-600 text-white rounded">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-white py-8">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
+        <div class="text-sm text-gray-600">© <span id="year"></span> P2J Industries — All rights reserved.</div>
+        <div class="mt-4 md:mt-0 text-sm text-gray-600">Follow us: <a class="ml-2 underline" href="#">LinkedIn</a> <span class="mx-2">|</span> <a class="underline" href="#">Instagram</a></div>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    // small interactivity
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const mobileBtn = document.getElementById('mobileBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    mobileBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>

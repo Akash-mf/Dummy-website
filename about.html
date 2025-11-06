@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About Us - P2J Industries</title>
+  <meta name="description" content="Learn about P2J Industries - your trusted partner in manufacturing and industrial solutions." />
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="antialiased text-gray-800 bg-gray-50">
+  <!-- NAV -->
+  <header class="bg-white shadow-sm sticky top-0 z-40">
+    <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
+      <div class="flex justify-between items-center h-30">
+        <!-- Logo and Title -->
+        <a href="index.html" class="flex items-center">
+          <img src="Images\logo\P2J_Logo.jpg" 
+               alt="P2J Industries Logo" 
+               class="w-20 h-23 object-contain" />
+        </a>
+        
+        <nav class="hidden md:flex items-center space-x-6 text-sm">
+          <a href="index.html" class="hover:text-indigo-600">Home</a>
+          <a href="#about" class="hover:text-indigo-600">About</a>
+          <a href="index.html#why" class="hover:text-indigo-600">Why Choose Us</a>
+          <a href="index.html#products" class="hover:text-indigo-600">Products</a>
+          <a href="index.html#machines" class="hover:text-indigo-600">Machine Manufacturers</a>
+          <a href="index.html#videos" class="hover:text-indigo-600">Video Testimonials</a>
+          <a href="index.html#careers" class="hover:text-indigo-600">Careers</a>
+          <a href="index.html#contact" class="hover:text-indigo-600">Contact Us</a>
+        </nav>
+
+        <div class="flex items-center space-x-2">
+          <a href="index.html#contact" class="hidden sm:inline-block px-4 py-2 bg-indigo-600 text-white rounded-md text-sm hover:bg-indigo-700 transition">Get in touch</a>
+          <button id="mobileBtn" class="md:hidden p-2 rounded-md focus:outline-none">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- mobile menu -->
+    <div id="mobileMenu" class="md:hidden hidden border-t">
+      <div class="px-4 py-4 flex flex-col space-y-2">
+        <a href="index.html">Home</a>
+        <a href="#about">About</a>
+        <a href="index.html#why">Why Choose Us</a>
+        <a href="index.html#products">Products</a>
+        <a href="index.html#machines">Machine Manufacturers</a>
+        <a href="index.html#videos">Video Testimonials</a>
+        <a href="index.html#careers">Careers</a>
+        <a href="index.html#contact">Contact Us</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ABOUT -->
+    <section id="about" class="py-16">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-center mb-8">🏭 About Us – P2J Industries</h2>
+        
+        <div class="prose max-w-none">
+          <p class="mt-4 text-gray-600">P2J Industries stands for "Pen to Jet" — a symbol of innovation, precision, and reliability in manufacturing.</p>
+          
+          <p class="mt-4 text-gray-600">Founded with a vision to transform industrial production through technology and quality craftsmanship, we have grown into a trusted name delivering high-performance products across multiple sectors.</p>
+          
+          <p class="mt-4 text-gray-600">At P2J Industries, we believe that every product tells a story of dedication, engineering excellence, and customer trust. Our advanced manufacturing processes, skilled workforce, and continuous R&D enable us to meet the evolving demands of the modern industry.</p>
+          
+          <p class="mt-4 text-gray-600">We are committed to providing end-to-end manufacturing solutions — from concept design and prototyping to production and delivery — ensuring that every detail aligns with international quality standards.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-white py-8 mt-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
+        <div class="text-sm text-gray-600">© <span id="year"></span> P2J Industries — All rights reserved.</div>
+        <div class="mt-4 md:mt-0 text-sm text-gray-600">Follow us: <a class="ml-2 underline" href="#">LinkedIn</a> <span class="mx-2">|</span> <a class="underline" href="#">Instagram</a></div>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    // Update copyright year
+    document.getElementById('year').textContent = new Date().getFullYear();
+    
+    // Mobile menu toggle
+    const mobileBtn = document.getElementById('mobileBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    mobileBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
